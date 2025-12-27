@@ -75,21 +75,21 @@ $(document).ready(function() {
 
 	/************************************End Main Slider*************************************/
 
-    $('.home_clients_slider').owlCarousel({
-        nav: false,
+    $('.glimpse_slider').owlCarousel({
+        nav: true,
         loop: true,
-        autoplay: true,
-        autoplayTimeout:1000,
+        autoplay: false,
+        autoplayTimeout: 3000,
         dots: false,
         responsive: {
           0: {
             items: 1
           },
           600: {
-            items: 3
+            items: 1
           },
           1000: {
-            items: 9
+            items: 1
           }
         }
     });

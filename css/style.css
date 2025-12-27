@@ -83,6 +83,11 @@ p{
 	color: #fff;
 	padding: 0 0 15px 0;
 }
+li{	
+	font-size: clamp(14px, 1.27vw, 25px);
+	line-height: 1.6;
+	color: #000;
+}
 
 /* #Grid system
 ================================================== */
@@ -215,16 +220,54 @@ header.smaller nav {
     font-weight: 200;
 }
 
+.heading{
+	font-size: 4.5vw;
+    line-height: 1.2;
+    font-size: clamp(25px, 4.5vw, 80px);
+    font-family: 'AWConqueror Light';
+    color: #fff;
+    padding: 0 0 clamp(20px, 2.5vw, 40px) 0;
+}
+.sub_heading{
+	font-size: 4.5vw;
+    line-height: 1.2;
+    font-size: clamp(20px, 3vw, 60px);
+    font-family: 'AWConqueror Light';
+    color: #fff;
+    padding: 0 0 clamp(20px, 2.5vw, 40px) 0;
+    /*margin: clamp(-20px, -1vw, -40px) 0 0 0;*/
+    color: #ee0047 !important;
+    font-style: italic;
+}
+.heading + .sub_heading{
+    margin: clamp(-20px, -1vw, -40px) 0 0 0;
+}
+.red{
+	color: #ee0047 !important;
+}
+.black{
+	color: #000;
+}
 section{
 	min-height: 100vh;
 	display: flex;
 	align-items: center;
+	padding: 5vw 0;
 }
 section .inner_container{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+}
+.primary_btn{
+	font-size: 22px;
+    color: #000;
+    background: #fff;
+    padding: 5px 40px;
+    border-radius: 100px;
+    font-weight: 500;
+    margin: 20px 0 0 0;
 }
 .width_50{
 	width: 50%;
@@ -236,16 +279,172 @@ section .inner_container{
 	padding: var(--header-height) 0 0 0;
 }
 .hero .text{
-	width: 62%;
+	/*width: 62%;*/
 }
 .hero .img_box img{
 	max-height: calc(100vh - var(--header-height));
 }
-.heading{
-	font-size: 4.5vw;
-    line-height: 1.2;
-    font-size: clamp(25px, 4.5vw, 60px);
-    font-family: 'AWConqueror Light';
+.about{
+	background: url(../images/bg/red-roses.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.about .right_pane{
+	position: relative;
+}
+.about .right_pane .img_box{
+	text-align: center;
+}
+.about .right_pane .img_box img{
+	max-height: 90vh;
+}
+.about .right_pane .overlay_text{
+	position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.7vw;
     color: #fff;
-    padding: 0 0 clamp(20px, 2.5vw, 40px) 0;
+    font-weight: 200;
+}
+.why_love{
+	background: url(../images/bg/white-bg.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.why_love .text_box ul{
+	padding: 0 0 0 20px;
+}
+.why_love .text_box ul li{
+	list-style: disc;
+}
+.why_love .img_box{
+	padding: 5vh 0;
+}
+.why_love .img_box img{
+	max-height: 100vh;
+}
+.meet_the_poet{
+	background: url(../images/bg/white-bg.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.meet_the_poet .text_box .text{
+	width: 80%;
+}
+.meet_the_poet .right_pane .img_box{
+	text-align: center;
+}
+.meet_the_poet .right_pane .img_box img{
+	max-height: 90vh;
+}
+.glimpse{
+	background: url(../images/bg/red-roses.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.glimpse .right_pane{
+	padding: 0 50px;
+}
+.glimpse .glimpse_slider_wrapper{
+	background: #fff;
+	padding: 2vw 2vw 2vw 2vw;
+}
+.glimpse .glimpse_slider_wrapper .heart_icon{
+	text-align: right;
+	padding: 2vw 1vw 0 0;
+}
+.glimpse .glimpse_slider_wrapper .heart_icon img{
+	width: 3vw;
+}
+
+.owl-carousel.owl-theme .owl-nav{
+	margin: 0;
+}
+.owl-carousel.owl-theme .owl-nav [class*=owl-]{
+	--size: 50px;
+    padding: 0;
+    margin: 0;
+    height: var(--size);
+    width: var(--size);
+    border-radius: var(--size);
+    font-size: calc(var(--size) * 1.3);
+    position: absolute;
+    left: calc((var(--size) * -1) - 2vw - 5px);
+    top: calc(50% - (var(--size) / 2));
+    background: #fff;
+    color: var(--dark-pink);
+}
+.owl-carousel.owl-theme .owl-nav [class*=owl-].owl-next{
+	left: unset;
+	right: calc((var(--size) * -1) - 2vw - 5px);
+}
+.owl-carousel.owl-theme .owl-nav [class*=owl-]:hover{
+	background: var(--dark-pink);
+    color: #fff;
+    outline: 1px solid #fff;
+}
+.owl-carousel.owl-theme .owl-nav [class*=owl-] span{
+	line-height: 0.3;
+    padding: 0 0 0.2em 0;
+    font-family: FontAwesome;
+}
+
+/*about_positions*/
+.about_positions{
+	background: url(../images/bg/white-bg.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.about_positions .inner_container{
+	text-align: center;
+	display: block;
+}
+.about_positions .inner_container .top_image{
+	width: 16%;
+	margin: auto;
+}
+.about_positions .inner_container .heading{
+	padding: clamp(20px, 3vw, 40px) 0 clamp(20px, 2.5vw, 40px) 0;
+}
+.why_gift{
+	background: url(../images/bg/red-roses.png) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/*footer*/
+footer{
+	background: url(../images/bg/hero.png) no-repeat;
+	background-size: cover;
+	background-position: top;
+	padding: 5vw 0;
+	text-align: center;
+	color: #fff;
+}
+footer .price_band{
+	width: 50%;
+	margin: auto;
+}
+footer .offer_valid{
+	font-size: 1.4vw;
+	font-weight: 500;
+	padding: 0 0 1.5vw;
+}
+footer .includes_premium{
+	font-size: 2vw;
+}
+footer .order_now{
+	font-size: 2vw;
+    font-weight: 500;
+    font-style: italic;
+    padding: 0 0 2vw;
+}
+footer .last_text{
+	font-size: 1.7vw;
 }
