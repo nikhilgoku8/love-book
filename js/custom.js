@@ -47,8 +47,8 @@ gsap.utils.toArray('.fade-in-up-footer').forEach((el) => {
   );
 });
 
-$(document).ready(function () {
-    setTimeout(() => {
+// $(document).ready(function () {
+    // setTimeout(() => {
 
         gsap.utils.toArray('.fade-in-scale-up').forEach((el) => {
           gsap.fromTo(
@@ -66,7 +66,7 @@ $(document).ready(function () {
               ease: 'back.out(1.7)',
               scrollTrigger: {
                 trigger: el,
-                start: 'top 65%',
+                start: 'top 80%',
                 end: 'top 0%',
                 toggleActions: 'play reverse play reverse',
                 // markers: true
@@ -91,7 +91,7 @@ $(document).ready(function () {
               ease: 'back.out(1.7)',
               scrollTrigger: {
                 trigger: el,
-                start: 'top 65%',
+                start: 'top 80%',
                 end: 'top 0%',
                 toggleActions: 'play reverse play reverse',
                 // markers: true
@@ -100,9 +100,9 @@ $(document).ready(function () {
           );
         });
 
-    }, 500)
+    // }, 500)
 
-});
+// });
 
 gsap.utils.toArray('.heart').forEach((el, i) => {
 
