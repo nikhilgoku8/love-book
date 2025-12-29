@@ -103,6 +103,7 @@
 </div> -->
 
 <section class="hero">
+    <div class="heart heart_1"><img src="images/heart.png"></div>
     <div class="contain_90">
         <div class="inner_container">
             
@@ -128,6 +129,7 @@
 </section>
 
 <section class="about">
+    <div class="heart heart_1"><img src="images/heart.png"></div>
     <div class="contain_90">
         <div class="inner_container">
             
@@ -147,6 +149,10 @@
                     <div class="img_box">
                         <img src="images/about-heart.png">
                     </div>
+                    <div class="heart_left"><img src="images/heart-half-half-left.png"></div>
+                    <div class="heart_right"><img src="images/heart-half-half-right.png"></div>
+                    <div class="line_left"><img src="images/line-left.png"></div>
+                    <div class="line_right"><img src="images/line-right.png"></div>
                     <div class="overlay_text">
                         Love & Her Sisters is a poetry <br>
                         collection that explores love in <br>

@@ -253,6 +253,7 @@ section{
 	display: flex;
 	align-items: center;
 	padding: 5vw 0;
+	position: relative;
 }
 section .inner_container{
 	display: flex;
@@ -278,8 +279,12 @@ section .inner_container{
 	background-position: center;
 	padding: var(--header-height) 0 0 0;
 }
-.hero .text{
-	/*width: 62%;*/
+.hero .heart{
+	position: absolute;
+    left: 6vw;
+    top: 5vw;
+    width: 11vw;
+    transform: rotate(-45deg);
 }
 .hero .img_box img{
 	max-height: calc(100vh - var(--header-height));
@@ -288,6 +293,13 @@ section .inner_container{
 	background: url(../images/bg/red-roses.png) no-repeat;
 	background-size: cover;
 	background-position: center;
+}
+.about .heart{
+	position: absolute;
+    right: 6vw;
+    top: -10vw;
+    width: 16vw;
+    transform: rotate(34deg);
 }
 .about .right_pane{
 	position: relative;
@@ -308,9 +320,38 @@ section .inner_container{
     width: 100%;
     height: 100%;
     text-align: center;
-    font-size: 1.7vw;
+    font-size: 1.6vw;
+    line-height: 1.4;
     color: #fff;
     font-weight: 200;
+}
+.about .right_pane .heart_left{
+	position: absolute;
+    left: 22%;
+    bottom: 14%;
+    width: 7.5vw;
+    z-index: 2;
+}
+.about .right_pane .heart_right{
+	position: absolute;
+    right: -4%;
+    top: 19%;
+    width: 7.5vw;
+    z-index: 2;
+}
+.about .right_pane .line_left{
+	position: absolute;
+    left: 26%;
+    top: 79%;
+    width: 16vw;
+    z-index: 1;
+}
+.about .right_pane .line_right{
+	position: absolute;
+    right: -13%;
+    top: 26%;
+    width: 7.2vw;
+    z-index: 1;
 }
 .why_love{
 	background: url(../images/bg/white-bg.png) no-repeat;
