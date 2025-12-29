@@ -141,13 +141,16 @@ header.smaller .logo {
 
 }
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (max-device-width : 768px) {
+:root{
+	--header-height: 63px;
+}
 /* Styles */
 th, td {
     font-size: 12px;
 }
 p{
-	text-align: justify;
+	text-align: center;
 }
 .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
 	width:100%;
@@ -157,15 +160,15 @@ p{
 	display:none!important;
 	}
 header {
-width: 100%;
-    height: auto;
-    position: fixed; 
-  
+	width: 100%;
+	height: auto;
+	position: fixed;
+	padding: 15px 0;  
 }
 header.smaller {
-	top:0;
-	height:110px;
-	background-color:#fff;
+	/*top:0;*/
+	/*height:110px;*/
+	/*background-color:#fff;*/
 }
 header .logo {
 float: left!important;
@@ -178,26 +181,190 @@ float: left!important;
 header nav {
     display:inline-block;
     float:right;
-    padding:2% 2% 0 0;
-    width:100%;
+    padding: 0;
+    width: unset;
     margin-top: 0%;
-	}
+    order: 2;
+}
 header.smaller .logo {
 	width:60%;
 	text-align:center;
 	margin:0 auto;
 	float:none;
 }
-
+header .inner_container{
+	justify-content: space-between;
+}
+.menu-toggle{
+	width: unset;
+}
+header .inner_container .c2a_btn{
+	order: 1;
+	padding: 0;
+}
+.menu-toggle #menu-btn{
+	margin: 0;
+}
+.menu-toggle .icon-bar{
+	background-color: #fff;
+}
 #main {
-    padding-top: 54px!important;
+    padding-top: 0 !important;
+}
+.ace-responsive-menu{
+	display: none;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	background-color: #e9535f;
+	margin: 0;
+}
+.ace-responsive-menu li::before{
+	display: none;
 }
 .ace-responsive-menu > li > a {
-    padding: 5px 0 0 12px!important;
+    padding: 0px 5vw !important;
+    font-size: 14px;
 }
 .ace-responsive-menu > li {
     padding: 8px 0!important;
 }
+.width_50{
+	width: 100%;
+}
+section .inner_container{
+	flex-wrap: wrap-reverse;
+	text-align: center;
+}
+section{
+	padding: 10vw 0;
+	/*min-height: unset;*/
+}
+.hero{
+	padding: calc(10vw + var(--header-height)) 0 10vw 0;
+}
+.hero .heart{
+	width: 20vw;
+}
+.heading{
+	padding: clamp(20px, 2.5vw, 40px)  0 clamp(20px, 2.5vw, 40px) 0;
+}
+.heading br{
+	display: none;
+}
+section .inner_container p br{
+	display: none;
+}
+.about .heart{
+	width: 25%;
+}
+.about .right_pane .heart_left{
+	width: 13.5vw;
+}
+.about .right_pane .heart_right{
+	width: 13.5vw;
+}
+.about .right_pane .line_right{
+	right: -5%;
+}
+.why_love .heart{
+	width: 20vw;
+}
+.why_love .right_pane .img_1{
+	left: 5%;
+    top: 8%;
+    width: 51vw;
+}
+.why_love .right_pane .img_2{
+	left: 40.5%;
+    top: 23.5%;
+    width: 53.5vw;
+}
+.why_love .right_pane .img_3 {
+    left: 0%;
+    bottom: 9%;
+    width: 64vw;
+}
+.why_love .text_box ul li{
+	/*list-style-position: inside;*/
+	list-style: none;
+}
+.book_section .heart{
+	width: 25vw;
+}
+.meet_the_poet .heart{
+	width: 20vw;
+}
+.meet_the_poet .text_box .text{
+	width: 100%;
+}
+.owl-carousel.owl-theme .owl-nav [class*=owl-]{
+	--size: 30px;
+}
+.glimpse .heart{
+	width: 25vw;
+}
+.glimpse .right_pane{
+	padding: 0 30px;
+}
+.about_positions .heart{
+	width: 20vw
+}
+.about_positions{
+	/*min-height: unset;*/
+}
+.about_positions .inner_container .top_image {
+    width: 60%;0
+}
+.why_gift .heart{
+	width: 25vw;
+}
+
+footer{
+	padding: 20vw 0;
+}
+footer .heart{
+	width: 20vw;
+}
+footer .price_band{
+	width: 100%;
+}
+footer .offer_valid {
+    font-size: 4vw;
+    padding: 0 0 5vw;
+}
+footer .includes_premium{
+    font-size: 6vw;
+}
+footer .order_now{
+    font-size: 6vw;
+    padding: 0 0 5vw;
+}
+footer .c2a_btn{
+    padding: 0 0 5vw;
+}
+footer .last_text{
+    font-size: 5vw;
+    padding: 0 0 5vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 /* Smartphones (landscape) ----------- */
@@ -209,4 +376,5 @@ header.smaller .logo {
 @media only screen and (max-width : 320px) {
 /* Styles */
 }
+
 

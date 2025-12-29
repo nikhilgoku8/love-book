@@ -87,7 +87,7 @@ $(function() {
 		var $textarea = $('textarea.bbp-the-content'),
 			$formatButtons = $('<div id="format-buttons">\
 				<div id="format-buttons-inner">\
-					<span class="add-smilies" onclick="$(this).siblings(\'.smilies\').slideToggle(250);return false;"><img src="/wp-content/plugins/tango-smilies/tango/face-smile.png"><span class="arrow"></span></span>\
+					<span class="add-smilies" onclick="$(this).siblings(\'.smilies\').slideToggle(250);return false;"><span class="arrow"></span></span>\
 					<span data-startstr="<strong>" data-endstr="</strong>" style="font-weight:bold;">B</span>\
 					<span data-startstr="<em>" data-endstr="</em>" style="font-style:italic;">I</span>\
 					<span data-startstr="" data-endstr=" http://">http://</span>\
