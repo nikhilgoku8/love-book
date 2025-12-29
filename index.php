@@ -135,7 +135,7 @@
             
             <div class="width_50">
                 <div class="text_box">
-                    <div class="heading">LOVE IS <br> NEVER ALONE.</div>
+                    <div class="heading back-in-down">LOVE IS <br> NEVER ALONE.</div>
                     <div class="text">
                         <p>She walks with her sisters - Faith,<br>Longing, Silence, Hope.</p>
                     </div>
@@ -171,6 +171,7 @@
 <!-- about -->
 
 <section class="why_love">
+    <div class="heart heart_1"><img src="images/heart.png"></div>
     <div class="contain_90">
         <div class="inner_container">
             
@@ -202,11 +203,13 @@
 <!-- why_love -->
 
 <div class="book_section">
+    <div class="heart heart_1"><img src="images/heart.png"></div>
     <img src="images/book-section.png">
 </div>
 <!-- book_section -->
 
 <section class="meet_the_poet">
+    <div class="heart heart_1"><img src="images/heart.png"></div>
     <div class="contain_90">
         <div class="inner_container">
             
@@ -233,6 +236,7 @@
 <!-- meet_the_poet -->
 
 <section class="glimpse">
+    <div class="heart heart_1"><img src="images/heart.png"></div>
     <div class="contain_90">
         <div class="inner_container">
             
@@ -277,6 +281,7 @@
 <!-- glimpse -->
 
 <section class="about_positions">
+    <div class="heart heart_1"><img src="images/heart.png"></div>
     <div class="contain_90">
         <div class="inner_container">
             
@@ -294,6 +299,7 @@
 <!-- about_positions -->
 
 <section class="why_gift">
+    <div class="heart heart_1"><img src="images/heart.png"></div>
     <div class="contain_90">
         <div class="inner_container">
             
@@ -322,6 +328,7 @@
 <!-- main -->
 
 <footer>
+    <div class="heart heart_1"><img src="images/heart.png"></div>
     <div class="contain_90">
         <div class="inner_container">
             
@@ -338,6 +345,8 @@
         </div>
     </div>
 </footer>
+
+
 
 <!--sticky header-->
 <!-- <script src="js/classie.js" type="text/javascript"></script>
@@ -415,6 +424,109 @@ new WOW().init();
 <!--slider-->
 <script src="owl-carousel/owl.carousel.js"></script>
 <script src="owl-carousel/owl-content-animation.js"></script>
+
+
+<!-- GSAP core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<!-- ScrollTrigger plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<script>
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.fromTo(
+  '.back-in-down',
+  {
+    y: -120,
+    scale: 0.7,
+    opacity: 0
+  },
+  {
+    y: 0,
+    scale: 1,
+    opacity: 1,
+    duration: 0.9,
+    ease: 'back.out(1.7)',
+    scrollTrigger: {
+      trigger: '.back-in-down',
+      start: 'top 80%',
+      end: 'top 20%',
+      toggleActions: 'play reverse play reverse',
+      // markers: true   // 👈 enable markers
+    }
+  }
+);
+
+gsap.utils.toArray('.heart').forEach((el, i) => {
+
+  const section = el.closest('section');
+  if (!section) return;
+
+  gsap.fromTo(
+    el,
+    { y: -100 },
+    {
+      y: 100,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: section,         // ✅ correct section
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: 1,
+        markers: true
+      }
+    }
+  );
+
+});
+
+gsap.utils.toArray('.heart').forEach((el, i) => {
+
+  const section = el.closest('div');
+  if (!section) return;
+
+  gsap.fromTo(
+    el,
+    { y: -100 },
+    {
+      y: 100,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: section,         // ✅ correct section
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: 1,
+        markers: true
+      }
+    }
+  );
+
+});
+
+gsap.utils.toArray('.heart').forEach((el, i) => {
+
+  const section = el.closest('footer');
+  if (!section) return;
+
+  gsap.fromTo(
+    el,
+    { y: -100 },
+    {
+      y: 100,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: section,         // ✅ correct section
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: 1,
+        markers: true
+      }
+    }
+  );
+
+});
+</script>
 
 </body>
 </html>
