@@ -33,6 +33,18 @@
 
 <!-- <link rel="stylesheet" href="venobox/venobox.css" type="text/css" media="screen" /> -->
 
+<!-- glightbox USING A CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const lightbox = GLightbox({
+    selector: '.glightbox'
+  });
+});
+</script>
+
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link href="css/responsive.css" rel="stylesheet" type="text/css" />
 
@@ -273,52 +285,58 @@
 
                             <div class="item_box">
                                 <div class="img_box">
-                                    <img src="images/glimpse/1.jpg">
+                                    <a href="https://youtu.be/oRj04ZyeKmk" class="glightbox youtube_video">
+                                        <img src="images/glimpse/1.jpg">
+                                    </a>
                                 </div>
                             </div>
                             <div class="item_box">
                                 <div class="img_box">
-                                    <img src="images/glimpse/2.jpg">
+                                    <a href="images/glimpse/2.jpg" class="glightbox">
+                                        <img src="images/glimpse/2.jpg">
+                                    </a>
                                 </div>
                             </div>
                             <div class="item_box">
                                 <div class="img_box">
-                                    <img src="images/glimpse/3.jpg">
+                                    <a href="https://youtu.be/SdCJ1ZRQF-k" class="glightbox youtube_video">
+                                        <img src="images/glimpse/3.jpg">
+                                    </a>
                                 </div>
                             </div>
                             <div class="item_box">
                                 <div class="img_box">
-                                    <img src="images/glimpse/4.jpg">
+                                    <a href="images/glimpse/4.jpg" class="glightbox">
+                                        <img src="images/glimpse/4.jpg">
+                                    </a>
                                 </div>
                             </div>
                             <div class="item_box">
                                 <div class="img_box">
-                                    <img src="images/glimpse/5.jpg">
+                                    <a href="https://youtu.be/HYi6CEyOmpQ" class="glightbox youtube_video">
+                                        <img src="images/glimpse/5.jpg">
+                                    </a>
                                 </div>
                             </div>
                             <div class="item_box">
                                 <div class="img_box">
-                                    <img src="images/glimpse/6.jpg">
+                                    <a href="https://youtu.be/z7LJThIZ2xY" class="glightbox youtube_video">
+                                        <img src="images/glimpse/6.jpg">
+                                    </a>
                                 </div>
                             </div>
                             <div class="item_box">
                                 <div class="img_box">
-                                    <img src="images/glimpse/7.jpg">
+                                    <a href="https://youtu.be/51mV8qi0mPc" class="glightbox youtube_video">
+                                        <img src="images/glimpse/7.jpg">
+                                    </a>
                                 </div>
                             </div>
                             <div class="item_box">
                                 <div class="img_box">
-                                    <img src="images/glimpse/8.jpg">
-                                </div>
-                            </div>
-                            <div class="item_box">
-                                <div class="img_box">
-                                    <img src="images/glimpse/9.jpg">
-                                </div>
-                            </div>
-                            <div class="item_box">
-                                <div class="img_box">
-                                    <img src="images/glimpse/10.jpg">
+                                    <a href="images/glimpse/8.jpg" class="glightbox">
+                                        <img src="images/glimpse/8.jpg">
+                                    </a>
                                 </div>
                             </div>
 
@@ -464,7 +482,7 @@ $(document).ready(function () {
 });
 </script>
 
-<script type="text/javascript" src="venobox/venobox.min.js"></script>
+<!-- <script type="text/javascript" src="venobox/venobox.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
   /* default settings */
@@ -472,9 +490,7 @@ $(document).ready(function(){
     framewidth: '500px', 
   }); 
 });
-</script>
-
-
+</script> -->
 
 
 <script src='js/wow.min.js'></script>

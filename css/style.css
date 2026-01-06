@@ -512,7 +512,24 @@ section .inner_container{
 	width: 3vw;
 }
 .glimpse .glimpse_slider_wrapper .item_box .img_box{
+}
+.glimpse .glimpse_slider_wrapper .item_box .img_box a{
+	display: block;
 	padding: 82% 0 0 0;
+	position: relative;
+}
+.glimpse .glimpse_slider_wrapper .item_box .img_box a.youtube_video::before{
+	--size: 50px;
+	position: absolute;
+    content: '';
+    left: calc(50% - (var(--size) / 2));
+    top: calc(50% - (var(--size) / 2));
+    width: var(--size);
+    height: var(--size);
+    background: url(../images/icons/youtube.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 1;
 }
 .glimpse .glimpse_slider_wrapper .item_box .img_box img{
 	position: absolute;
