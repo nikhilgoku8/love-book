@@ -1,5 +1,5 @@
 <?php include('includes/header.php'); ?>
-  
+
 <!-- <div class="banner">
     <div class="main_banner owl-carousel owl-theme">    
         <div class="item_box">
@@ -12,15 +12,15 @@
     <div class="heart heart_1"><img src="images/heart.png"></div>
     <div class="contain_90">
         <div class="inner_container">
-            
+
             <div class="width_50">
                 <div class="text_box fade-in-left">
                     <div class="heading">LOVE, GIFTED LIKE A MASTERPIECE.</div>
                     <div class="text">
                         <p>This Valentine’s, give more than words. Gift a <br>
-                         beautifully curated poetry book - Love & Her <br>
-                          Sisters - wrapped like a precious keepsake, <br>
-                           crafted to say what your heart feels.</p>
+                            beautifully curated poetry book - Love & Her <br>
+                            Sisters - wrapped like a precious keepsake, <br>
+                            crafted to say what your heart feels.</p>
                     </div>
                 </div>
             </div>
@@ -38,7 +38,7 @@
     <div class="heart heart_1"><img src="images/heart.png"></div>
     <div class="contain_90">
         <div class="inner_container">
-            
+
             <div class="width_50">
                 <div class="text_box fade-in-left">
                     <div class="heading">LOVE IS <br> NEVER ALONE.</div>
@@ -46,7 +46,7 @@
                         <p>She walks with her sisters - Faith,<br>Longing, Silence, Hope.</p>
                     </div>
                     <div class="c2a_btn">
-                        <a href="https://pages.razorpay.com/pl_RpW0MZFEEk42FD/view" target="_blank" class="primary_btn">Pre order</a>
+                        <a href="checkout.php" class="primary_btn">Pre order</a>
                     </div>
                 </div>
             </div>
@@ -80,7 +80,7 @@
     <div class="heart heart_1"><img src="images/heart.png"></div>
     <div class="contain_90">
         <div class="inner_container">
-            
+
             <div class="width_50">
                 <div class="text_box fade-in-left">
                     <div class="heading red">WHY LOVE & <br> HER SISTERS IS <br> A PERFECT GIFT</div>
@@ -127,13 +127,19 @@
     <div class="heart heart_1"><img src="images/heart.png"></div>
     <div class="contain_90">
         <div class="inner_container">
-            
+
             <div class="width_50">
                 <div class="text_box fade-in-left">
                     <div class="heading red">MEET THE POET</div>
                     <div class="sub_heading">Vibha Hasija</div>
                     <div class="text">
-                        <p class="black">Vibha Hasija writes poetry from a deeply spiritual and humane space where love is both the subject and the method. Her poetry treats love as a living force; one that heals, fractures, transforms, and ultimately elevates the soul. Drawing from everyday metaphors, colours, nature, and the body, she dissolves the boundary between the sacred and the ordinary. Her philosophy believes that love begins with self-awareness, expands through compassion, and matures into divine acceptance. Each poem is an invitation to feel deeply, surrender gently, and recognise love as life’s most enduring truth.</p>
+                        <p class="black">Vibha Hasija writes poetry from a deeply spiritual and humane space where love
+                            is both the subject and the method. Her poetry treats love as a living force; one that
+                            heals, fractures, transforms, and ultimately elevates the soul. Drawing from everyday
+                            metaphors, colours, nature, and the body, she dissolves the boundary between the sacred and
+                            the ordinary. Her philosophy believes that love begins with self-awareness, expands through
+                            compassion, and matures into divine acceptance. Each poem is an invitation to feel deeply,
+                            surrender gently, and recognise love as life’s most enduring truth.</p>
                     </div>
                 </div>
             </div>
@@ -154,12 +160,13 @@
     <div class="heart heart_1"><img src="images/heart.png"></div>
     <div class="contain_90">
         <div class="inner_container">
-            
+
             <div class="width_50">
                 <div class="text_box fade-in-left">
                     <div class="heading">A GLIMPSE INSIDE THE BOOK</div>
                     <div class="text">
-                        <p class="">Love does not arrive alone.<br> She brings Faith when you’re unsure,<br> Silence when words fall short,<br> Hope when all seems lost.</p>
+                        <p class="">Love does not arrive alone.<br> She brings Faith when you’re unsure,<br> Silence
+                            when words fall short,<br> Hope when all seems lost.</p>
                     </div>
                 </div>
             </div>
@@ -242,13 +249,14 @@
     <div class="heart heart_1"><img src="images/heart.png"></div>
     <div class="contain_90">
         <div class="inner_container">
-            
+
             <div class="top_image fade-in-up">
                 <img src="images/position-with-poems.webp">
             </div>
             <div class="heading red fade-in-up">ABOUT POSITION <br> WITH POEMS</div>
             <div class="text fade-in-up">
-                <p class="black">Position with Poems is a premium creative platform where poetry meets purpose. <br> Love & Her Sisters is our first offering; a celebration of love in its most honest form.</p>
+                <p class="black">Position with Poems is a premium creative platform where poetry meets purpose. <br>
+                    Love & Her Sisters is our first offering; a celebration of love in its most honest form.</p>
             </div>
 
         </div>
@@ -260,12 +268,13 @@
     <div class="heart heart_1"><img src="images/heart.png"></div>
     <div class="contain_90">
         <div class="inner_container">
-            
+
             <div class="width_50">
                 <div class="text_box fade-in-left">
                     <div class="heading">WHY GIFT LOVE & <br> HER SISTERS</div>
                     <div class="text">
-                        <p class="">When flowers fade and chocolates are <br> forgotten, poetry remains. <br> This Valentine’s, gift something timeless.</p>
+                        <p class="">When flowers fade and chocolates are <br> forgotten, poetry remains. <br> This
+                            Valentine’s, gift something timeless.</p>
                     </div>
                 </div>
             </div>

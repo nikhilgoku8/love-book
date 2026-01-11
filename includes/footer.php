@@ -11,11 +11,12 @@
             <div class="price_band  fade-in-up-footer">
                 <img src="images/price-band.webp">
             </div>
-            <div class="offer_valid  fade-in-up-footer">Offer valid until January 9th, 2026</div>
+            <div class="offer_valid  fade-in-up-footer">Offer valid until January 31st, 2026</div>
             <div class="includes_premium  fade-in-up-footer">Includes premium packaging + book + pop-up message</div>
             <div class="order_now  fade-in-up-footer">Order Now | Gift Love Today</div>
             <div class="c2a_btn">
-                <a href="https://pages.razorpay.com/pl_RpW0MZFEEk42FD/view" target="_blank" class="pink_btn heartBeat">
+                <!-- <a href="https://pages.razorpay.com/pl_RpW0MZFEEk42FD/view" target="_blank" class="pink_btn heartBeat"> -->
+                <a href="checkout.php" class="pink_btn heartBeat">
                     <span>Pre-Book Now</span>
                     <span class="hollow_heart"><img src="images/hollow-heart.svg"></span>
                 </a>
