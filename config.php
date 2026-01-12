@@ -6,8 +6,8 @@ use Razorpay\Api\Api;
 
 // KEY_ID and KEY_SECRET
 // PLEASE REPLACE THESE WITH YOUR ACTUAL KEYS
-define('RAZORPAY_KEY_ID', 'rzp_live_S12WeeuzILdlRp');
-define('RAZORPAY_KEY_SECRET', '4yI7x1kMlawNunOh4Qtjn5IR');
+define('RAZORPAY_KEY_ID', 'rzp_live_S32aNavEKCnUz4');
+define('RAZORPAY_KEY_SECRET', 'T2bCGkWDZA0Q96Fq6yfD0CtG');
 
 // Product Details
 define('PRODUCT_NAME', 'Love & Her Sisters');
