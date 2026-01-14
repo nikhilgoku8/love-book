@@ -35,8 +35,8 @@ if (empty($_POST['razorpay_payment_id']) === false) {
 if ($success === true) {
     // Payment was successful
 
-    // Store user details in session (or save to DB)
-    $_SESSION['order_details'] = [
+    // Store user details in session
+    $orderDetails = [
         'name' => $_POST['name'] ?? '',
         'email' => $_POST['email'] ?? '',
         'phone' => $_POST['phone'] ?? '',
@@ -47,6 +47,22 @@ if ($success === true) {
         'payment_id' => $_POST['razorpay_payment_id'],
         'amount' => PRODUCT_PRICE
     ];
+    $_SESSION['order_details'] = $orderDetails;
+
+    // 1. Create Order in Delhivery
+    require_once 'includes/Delhivery.php';
+    $delhivery = new Delhivery();
+    $delhiveryResponse = $delhivery->createOrder($orderDetails);
+
+    // 2. Send Emails
+    require_once 'includes/Mailer.php';
+    $mailer = new Mailer();
+
+    // Send to Customer
+    $mailer->sendOrderConfirmation($orderDetails['email'], $orderDetails, $delhiveryResponse);
+
+    // Send to Admin
+    $mailer->sendAdminNotification($orderDetails, $delhiveryResponse);
 
     // Redirect to Thank You page
     header('Location: thank-you.php');

@@ -24,7 +24,7 @@
             <div class="last_text  fade-in-up-footer">Limited Valentine’s Edition.<br>
                 Position with Poems<br>
                 Turning Moments into Masterpieces Magically.</div>
-            <div class="follow_us_instagram  fade-in-up-footer">
+            <div class="follow_us_instagram">
                 <a href="https://www.instagram.com/position_with_poems?igsh=cGkzNXU3djlnaWF0" target="_blank">
                     <img src="images/follow-us-instagram.png" style="width: 200px;max-width: 90%;">
                 </a>
