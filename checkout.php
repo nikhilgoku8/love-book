@@ -66,6 +66,73 @@
     </div>
 </section>
 
+<div class="body_overlay">
+    <div class="inner_box">
+        <div class="request_overlay_box">
+            <div class="form_wrapper">
+                <div class="heading red">Enquire Now</div>
+                <p class="center red"><b>Request a callback. Interested in knowing more about anish?</b><br>Help us with your details & we will get back to you in 48 hours.</p>
+                <form class="user_mobile_form" action="" method="POST">
+                    <div class="error form_error form-error-company_name"></div>
+                    <input type="text" name="user_mobile" maxlength="10" minlength="10">
+                </form>
+            </div>
+            <a class="close_overlay"></a>
+        </div>
+    </div>
+</div>
+
+<script>
+    
+$(document).ready(function(){
+
+    // Client Registration Form
+   $(".user_mobile_form").on('submit',(function(e){
+        e.preventDefault();
+
+        const $form = $(this);
+        $form.find(".form_error").html("").removeClass("alert alert-danger");
+
+        $.ajax({
+            type: "POST",
+            url: "mobile-input.php",
+            data: new FormData(this),
+            dataType: 'json',
+            cache: false,
+            contentType: false,
+            processData: false,
+            success: function (result) {
+                window.location.reload();
+            },
+            error: function (data) {
+                if (data.status === 422) {
+                    let errors = data.responseJSON.errors;
+                    $.each(errors, function (key, message) {
+                        const fieldName = key.replace(/\./g, '-');
+                        $form.find(".form-error-" + fieldName).html(message).addClass('alert alert-danger');
+                    });
+                } else if (data.status === 401) {
+                    alert("Please log in.");
+                } else if (data.status === 403) {
+                    alert("You don’t have permission.");
+                } else if (data.status === 404) {
+                    alert("The resource was not found.");
+                } else if (data.status === 500) {
+                    alert("Something went wrong on the server.");
+                    console.log(data.console_message);
+                } else {
+                    alert("Unexpected error: " + data.status);
+                    console.log(data);
+                }
+            }
+        });
+
+    }));
+
+});
+
+</script>
+
 <!-- Razorpay Checkout Script -->
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <script>

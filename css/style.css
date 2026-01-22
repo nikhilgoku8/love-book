@@ -750,3 +750,98 @@ footer .last_text{
 .follow_us_instagram{
 	padding: 15px 0 0 0;
 }
+
+
+/*body_overlay*/
+.body_overlay {
+  background: rgba(0,0,0,0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  /*display: none;*/
+  transition: unset;
+}
+.body_overlay .inner_box{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.request_overlay_box {
+  width: 600px;
+  max-width: 90%;
+  background: #fff;
+  padding: 30px 40px;
+  position: relative;
+}
+.request_overlay_box .form_wrapper .heading{
+	padding: 0 0 10px;
+	margin: 0 0 15px;
+}
+.request_overlay_box .form_wrapper p{
+	text-align: center;
+	padding: 0 0 20px;
+}
+.request_overlay_box .form_wrapper form .input_box {
+  padding: 0 0 10px;
+}
+.request_overlay_box .form_wrapper form .input_box input[type=text] {
+  background: #f8f5ee;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+.request_overlay_box .form_wrapper form .input_box select {
+  background: #f8f5ee;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+.request_overlay_box .form_wrapper form .input_box textarea {
+  background: #f8f5ee;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+.request_overlay_box .form_enquire_now{
+  width: 98%;
+  margin: 0 auto;
+  padding: 2% 0%;
+}
+.request_overlay_box .submit_box.right{
+	text-align: left;
+}
+.close_overlay {
+  position: absolute;
+  right: -5px;
+  top: -25px;
+  width: 32px;
+  height: 32px;
+}
+.close_overlay:hover {
+  opacity: 1;
+}
+.close_overlay:before, .close_overlay:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 20px;
+  width: 2px;
+  background-color: #fff;
+}
+.close_overlay:before {
+  transform: rotate(45deg);
+}
+.close_overlay:after {
+  transform: rotate(-45deg);
+}
