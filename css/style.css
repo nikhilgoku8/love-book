@@ -845,3 +845,34 @@ footer .last_text{
 .close_overlay:after {
   transform: rotate(-45deg);
 }
+.alert-danger{
+	color: red;
+	font-size: 12px;
+}
+
+.body_overlay .form_wrapper{
+	text-align: center;
+}
+.body_overlay .form_wrapper form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.body_overlay .form_wrapper form [name*=user_mobile]{
+	height: 40px;
+	width: 300px;
+	max-width: 90%;
+	padding: 10px;
+	font-size: 15px;
+	outline: none;
+	text-align: center;
+}
+.body_overlay .form_wrapper form button{
+	font-size: 16px;
+	padding: 5px 20px;
+	font-weight: 500;
+	margin: 15px 0 0 0;
+	text-transform: uppercase;
+	border: 1px solid;
+}

@@ -100,4 +100,32 @@ class Mailer
             return false;
         }
     }
+
+    public function sendMobileNumber($mobileNumber)
+    {
+        try {
+            $this->mail->clearAddresses();
+            $this->mail->addAddress(ADMIN_EMAIL);
+
+            $this->mail->isHTML(true);
+            $this->mail->Subject = 'Check Out Popup - ' . $mobileNumber;
+
+            $body = "<h1>New Check Out Popup</h1>";
+            $body .= "<h3>Customer Details:</h3>";
+            $body .= "<ul>";
+            $body .= "<li>Phone: {$mobileNumber}</li>";
+            $body .= "</ul>";
+
+            $this->mail->Body = $body;
+            $this->mail->AltBody = strip_tags($body);
+
+            $this->mail->send();
+            return true;
+        } catch (Exception $e) {
+            error_log("Admin notification could not be sent. Mailer Error: {$this->mail->ErrorInfo}");
+            return false;
+        }
+    }
+
+
 }
