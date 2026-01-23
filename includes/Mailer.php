@@ -108,7 +108,7 @@ class Mailer
             $this->mail->addAddress(ADMIN_EMAIL);
 
             $this->mail->isHTML(true);
-            $this->mail->Subject = 'Check Out Popup - ' . $mobileNumber;
+            $this->mail->Subject = 'Love & Her Sisters Website Check Out Popup - ' . $mobileNumber;
 
             $body = "<h1>New Check Out Popup</h1>";
             $body .= "<h3>Customer Details:</h3>";

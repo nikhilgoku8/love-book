@@ -5,6 +5,10 @@ ini_set('display_errors', 1);
 session_start();
 date_default_timezone_set('Asia/Calcutta');
 
+require_once 'config.php';
+require_once 'includes/Mailer.php';
+$mailer = new Mailer();
+
 $error_flag = 0;
 $statusCode = 200;
 $form_errors_array = [];
@@ -25,11 +29,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($error_flag == 0) {
 
-        require_once 'includes/Mailer.php';
-        $mailer = new Mailer();
-
         if ($mailer->sendMobileNumber($user_mobile)) {
-            $response = ['success' => ['message' => 'success']];
+            $response = [
+                'success' => ['message' => 'success'],
+                'user_mobile' => $user_mobile,
+            ];
         } else {
             $response = ['error' => ['message' => 'Mail not working']];
             $statusCode = 422;

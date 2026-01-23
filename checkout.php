@@ -70,15 +70,15 @@
     <div class="inner_box">
         <div class="request_overlay_box">
             <div class="form_wrapper">
-                <div class="heading red">Enquire Now</div>
-                <p class="center red"><b>Request a callback. Interested in knowing more about anish?</b><br>Help us with your details & we will get back to you in 48 hours.</p>
+                <!-- <div class="heading red">Enquire Now</div> -->
+                <p class="center red"><b>Kindly enter your mobile number to proceed with the checkout process.</b></p>
                 <form class="user_mobile_form" action="" method="POST">
                     <div class="form-error-user_mobile"></div>
                     <input type="text" name="user_mobile" maxlength="10" minlength="10">
                     <button type="submit" class="pink_btn">Submit</button>
                 </form>
             </div>
-            <a class="close_overlay"></a>
+            <!-- <a class="close_overlay"></a> -->
         </div>
     </div>
 </div>
@@ -95,6 +95,11 @@ $(".user_mobile_form").on("submit", function (e) {
     // ✅ Clear previous errors properly
     $form.find("[class^='form-error-']").html("").removeClass("alert alert-danger");
 
+    var $submitButton = $form.find("[type=submit]");
+
+    $submitButton.attr('disabled', 'disabled');
+    $submitButton.addClass('spinners');
+
     $.ajax({
         type: "POST",
         url: "mail_process_checkout_popup.php",
@@ -105,7 +110,9 @@ $(".user_mobile_form").on("submit", function (e) {
         processData: false,
 
         success: function (result) {
+            $submitButton.removeAttr('disabled').removeClass('spinners');
             $('.body_overlay').fadeOut();
+            $('[name=phone]').val(result.user_mobile);
             // alert("Mobile number submitted successfully");
             // $form[0].reset();
         },
@@ -127,6 +134,7 @@ $(".user_mobile_form").on("submit", function (e) {
                 alert("Something went wrong. Please try again.");
                 console.log(data);
             }
+            $submitButton.removeAttr('disabled').removeClass('spinners');
         }
     });
 });
