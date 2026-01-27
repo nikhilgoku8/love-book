@@ -21,7 +21,7 @@ define('DELHIVERY_IS_PRODUCTION', true); // Set to true for production
 
 // Email Configuration
 // define('ADMIN_EMAIL', 'positionwithpoems@gmail.com'); // Replace with admin email
-define('ADMIN_EMAIL', 'nikhilgoku8@gmail.com'); // Replace with admin email
+define('ADMIN_EMAIL', 'positionwithpoems@gmail.com'); // Replace with admin email
 define('SMTP_HOST', 'smtp.gmail.com');
 define('SMTP_USER', 'nikhilgoku8@gmail.com');
 define('SMTP_PASS', 'zlcxdklatmtzvqmo');
