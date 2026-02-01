@@ -1,5 +1,6 @@
 <?php
-error_reporting(E_ALL);
+// error_reporting(E_ALL);
+error_reporting(0);
 ini_set('display_errors', 1);
 
 session_start();
@@ -28,6 +29,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if ($error_flag == 0) {
+
+        $postFields = "entry.2076477803=" .$user_mobile;
+
+
+        $ch1 = curl_init();
+        curl_setopt($ch1, CURLOPT_URL, "https://docs.google.com/forms/d/e/1FAIpQLSeOEBHz0w_elUNeBPLdjtNzDt19sG4LSFDASR7mcfyEPDw5vA/formResponse");
+        curl_setopt($ch1, CURLOPT_POST, 1);
+        curl_setopt($ch1, CURLOPT_POSTFIELDS, $postFields);
+        curl_setopt($ch1, CURLOPT_HEADER, 0);
+        curl_setopt($ch1, CURLOPT_RETURNTRANSFER, true);
+        //print_r($hash);
+        $result1 = curl_exec($ch1);  
 
         if ($mailer->sendMobileNumber($user_mobile)) {
             $response = [
