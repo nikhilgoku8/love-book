@@ -29,6 +29,7 @@
                     <img src="images/follow-us-instagram.png" style="width: 200px;max-width: 90%;">
                 </a>
             </div>
+            <div class="last_line">Position with Poems is managed by Metatron Legacies,<br> the parent company of multiple brands.</div>
 
         </div>
     </div>

@@ -656,6 +656,9 @@ footer .c2a_btn{
 footer .last_text{
 	font-size: 1.7vw;
 }
+footer .last_line{
+	font-size: 1.4vw;
+}
 
 /*@keyframes heartBeat {
     0% {

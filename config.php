@@ -11,7 +11,7 @@ define('RAZORPAY_KEY_SECRET', 'T2bCGkWDZA0Q96Fq6yfD0CtG');
 
 // Product Details
 define('PRODUCT_NAME', 'Love & Her Sisters');
-define('PRODUCT_PRICE', 1999); // Price in Rupees
+define('PRODUCT_PRICE', 2499); // Price in Rupees
 define('CURRENCY', 'INR');
 
 // Delhivery Configuration
