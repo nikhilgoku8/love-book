@@ -186,6 +186,9 @@ document.getElementById('rzp-button1').onclick = function(e){
             "description": data.description,
             "image": "images/logo.png",
             "order_id": data.id, 
+            "notes": {
+                "source": "website"
+            },
             "handler": function (response){
                 // Submit payment details + form data to verify.php
                 var submitForm = document.createElement("form");

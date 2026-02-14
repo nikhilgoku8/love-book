@@ -12,7 +12,10 @@ try {
         'receipt' => $receiptId,
         'amount' => PRODUCT_PRICE * 100, // Amount in paise
         'currency' => CURRENCY,
-        'payment_capture' => 1 // Auto capture
+        'payment_capture' => 1, // Auto capture
+        'notes' => [
+            'source' => 'website'
+        ]
     ];
 
     $razorpayOrder = $api->order->create($orderData);

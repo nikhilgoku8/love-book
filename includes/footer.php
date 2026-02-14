@@ -11,7 +11,7 @@
             <div class="price_band  fade-in-up-footer">
                 <img src="images/price-band.webp">
             </div>
-            <div class="offer_valid  fade-in-up-footer">Offer valid until January 31st, 2026</div>
+            <!-- <div class="offer_valid  fade-in-up-footer">Offer valid until January 31st, 2026</div> -->
             <div class="includes_premium  fade-in-up-footer">Includes premium packaging + book + pop-up message</div>
             <div class="order_now  fade-in-up-footer">Order Now | Gift Love Today</div>
             <div class="c2a_btn">

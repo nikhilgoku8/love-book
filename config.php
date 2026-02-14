@@ -11,7 +11,7 @@ define('RAZORPAY_KEY_SECRET', 'T2bCGkWDZA0Q96Fq6yfD0CtG');
 
 // Product Details
 define('PRODUCT_NAME', 'Love & Her Sisters');
-define('PRODUCT_PRICE', 2499); // Price in Rupees
+define('PRODUCT_PRICE', 2999); // Price in Rupees
 define('CURRENCY', 'INR');
 
 // Delhivery Configuration
@@ -20,7 +20,7 @@ define('DELHIVERY_WAREHOUSE_NAME', 'Youngistan Creative And Digital Services Pvt
 define('DELHIVERY_IS_PRODUCTION', true); // Set to true for production
 
 // Email Configuration
-// define('ADMIN_EMAIL', 'positionwithpoems@gmail.com'); // Replace with admin email
+// define('ADMIN_EMAIL', 'nikhilgoku8@gmail.com'); // Replace with admin email
 define('ADMIN_EMAIL', 'positionwithpoems@gmail.com'); // Replace with admin email
 define('SMTP_HOST', 'smtp.gmail.com');
 define('SMTP_USER', 'nikhilgoku8@gmail.com');
