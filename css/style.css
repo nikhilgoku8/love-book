@@ -312,6 +312,9 @@ section .inner_container{
 	background-position: center;
 	padding: var(--header-height) 0 0 0;
 }
+.hero .contain_90{
+	margin: auto auto 0 auto;
+}
 .hero .heart{
 	position: absolute;
     left: 6vw;
@@ -324,6 +327,7 @@ section .inner_container{
 }
 .hero .text_box{
 	opacity: 0;
+	padding: 0 0 0 5vw;
 }
 .hero .img_box{
 	opacity: 0;
@@ -344,6 +348,11 @@ section .inner_container{
 }
 .about .heart img{
     transform: rotate(34deg);
+}
+.about .left_pane .img_box{
+	width: 70%;
+	margin: auto;
+	padding: 0 5vw 0 0;
 }
 .about .right_pane{
 	position: relative;
@@ -397,6 +406,11 @@ section .inner_container{
     top: 26%;
     width: 7.2vw;
     z-index: 1;
+}
+.about .text_box .title{
+	color: #fff;
+	font-size: clamp(16px, 1.5vw, 1.5vw);
+	padding: 0 0 3vw;
 }
 .why_love{
 	background: url(../images/bg/webp/white-bg.webp) no-repeat;
@@ -635,6 +649,7 @@ footer .heart{
 footer .price_band{
 	width: 50%;
 	margin: auto;
+	padding: 0 0 1vw;
 }
 footer .offer_valid{
 	font-size: 1.4vw;

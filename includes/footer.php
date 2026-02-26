@@ -17,11 +17,11 @@
             <div class="c2a_btn">
                 <!-- <a href="https://pages.razorpay.com/pl_RpW0MZFEEk42FD/view" target="_blank" class="pink_btn heartBeat"> -->
                 <a href="checkout.php" class="pink_btn heartBeat">
-                    <span>Pre-Book Now</span>
+                    <span>Order Now</span>
                     <span class="hollow_heart"><img src="images/hollow-heart.svg"></span>
                 </a>
             </div>
-            <div class="last_text  fade-in-up-footer">Limited Valentine’s Edition.<br>
+            <div class="last_text  fade-in-up-footer">Gift her words. Gift her gratitude. Gift her Love & Her Sisters.<br>
                 Position with Poems<br>
                 Turning Moments into Masterpieces Magically.</div>
             <div class="follow_us_instagram">
@@ -111,13 +111,6 @@ new WOW().init();
 <!--slider-->
 <script src="owl-carousel/owl.carousel.js"></script>
 <script src="owl-carousel/owl-content-animation.js"></script>
-
-
-<!-- GSAP core -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-
-<!-- ScrollTrigger plugin -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
 <script src="js/custom.js"></script>
 

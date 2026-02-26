@@ -14,19 +14,22 @@
         <div class="inner_container">
 
             <div class="width_50">
-                <div class="text_box fade-in-left">
-                    <div class="heading">LOVE, GIFTED LIKE A MASTERPIECE.</div>
-                    <div class="text">
-                        <p>This Valentine’s, give more than words. Gift a <br>
-                            beautifully curated poetry book - Love & Her <br>
-                            Sisters - wrapped like a precious keepsake, <br>
-                            crafted to say what your heart feels.</p>
-                    </div>
+                <div class="img_box fade-in-scale-up">
+                    <!-- <img src="images/girl-with-book.webp"> -->
+                    <img src="images/written-girl.png">
                 </div>
             </div>
             <div class="width_50">
-                <div class="img_box fade-in-scale-up">
-                    <img src="images/girl-with-book.webp">
+                <div class="text_box fade-in-left">
+                    <!-- <div class="heading">LOVE, GIFTED LIKE A MASTERPIECE.</div> -->
+                    <div class="heading">A TRIBUTE TO <br>HER LOVE.</div>
+                    <div class="text">
+                        <!-- <p>This Valentine’s, give more than words. Gift a <br>
+                            beautifully curated poetry book - Love & Her <br>
+                            Sisters - wrapped like a precious keepsake, <br>
+                            crafted to say what your heart feels.</p> -->
+                        <p>This Women’s Day, celebrate the woman who<br> gave without counting.</p>
+                    </div>
                 </div>
             </div>
 
@@ -34,7 +37,7 @@
     </div>
 </section>
 
-<section class="about" id="the-story">
+<!-- <section class="about" id="the-story">
     <div class="heart heart_1"><img src="images/heart.png"></div>
     <div class="contain_90">
         <div class="inner_container">
@@ -68,6 +71,40 @@
                         emotion, wrapped and <br>
                         delivered.
                     </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section> -->
+
+<section class="about" id="the-story">
+    <div class="heart heart_1"><img src="images/heart.png"></div>
+    <div class="contain_90">
+        <div class="inner_container">
+
+            <div class="width_50">
+                <div class="left_pane fade-in-scale-up">
+                    <div class="img_box">
+                        <img src="images/flower.png">
+                    </div>
+                </div>
+            </div>
+            <div class="width_50">
+                <div class="text_box fade-in-left">
+                    <div class="title white">THE MOTHER WHO SACRIFICED COMFORT FOR YOUR DREAMS.<br>
+                        THE GRANDMOTHER WHO CARRIED GENERATIONS WITH GRACE.<br>
+                        THE SISTER WHO BECAME YOUR STRENGTH.</div>
+                    <div class="text">
+                        <p>Love & Her Sisters is more than a book.<br>
+                        It is a poetic keepsake honouring every shade of a woman’s love — from nurturing to fierce, from gentle to resilient.</p>
+                        <p>Encased in an elegant jewellery-inspired box and wrapped in a signature jacket that unfolds to say, ‘You Mean The World To Me,’ this is a gift she will treasure for years.</p>
+                        <br>
+                        <p>She walks with her sisters - Faith, Longing, Silence, Hope.</p>
+                    </div>
+                    <!-- <div class="c2a_btn">
+                        <a href="checkout.php" class="primary_btn">Order Now</a>
+                    </div> -->
                 </div>
             </div>
 

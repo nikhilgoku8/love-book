@@ -85,6 +85,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <script type="text/javascript" src="js/jquery.3.3.1.min.js"></script>
 
+<!-- GSAP core -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<!-- ScrollTrigger plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
 </head>
 
 <body>
@@ -144,7 +150,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="c2a_btn">
             <!-- <a href="https://pages.razorpay.com/pl_RpW0MZFEEk42FD/view" target="_blank" class="pink_btn heartBeat"> -->
             <a href="checkout.php" class="pink_btn heartBeat">
-                <span>Pre-Book Now</span>
+                <span>Order Now</span>
                 <span class="hollow_heart"><img src="images/hollow-heart.svg"></span>
             </a>
         </div>
