@@ -124,7 +124,7 @@
                     <div class="text">
                         <ul>
                             <li>Premium poetry book by poet Vibha Hasija</li>
-                            <li>Curated Valentine’s gift packaging</li>
+                            <li>Curated premium gift packaging</li>
                             <li>Keepsake case for lasting value</li>
                             <li>Jacket with a pop-up message:<br>“You mean the world to me”</li>
                             <li>Designed to be gifted and cherished</li>
